@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     }
 
     void PushUp() {
-        RigidBody rb = selectedZombie.GetComponent<RigidBody>();
+        Rigidbody rb = selectedZombie.GetComponent<Rigidbody>();
         rb.AddForce(0, 0, 10, ForceMode.Impulse);
     }
 }
